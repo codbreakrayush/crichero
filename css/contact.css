@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Change these root variables to change the color and fonts */
+:root{
+    --main-bg: brown;
+    --second-bg-color: rgb(209, 204, 204);
+    --text-color-1:white;
+    --font-m: 'Roboto', sans-serif;
+}
+
+
+.mw-1{
+    max-width: 70vw;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+body{
+    background-color: var(--second-bg-color);
+    font-family: var(--font-m);
+}
+.cont{
+    /* background-color: red; */
+    width: inherit;
+    height:auto;
+    display: flex;
+    border:0px solid var(--text-color-1);
+    border-radius: 60px;
+    background-color: var(--text-color-1);
+    margin-top: 5vw;
+}
+
+.c-form{
+    padding-top: 2vw;
+    margin-top: 1vw;
+    width: 50%;
+    margin-left:8vw;
+    margin-right:6vw;
+    padding-bottom: 2vw;
+    margin-bottom: 40px;
+}
+
+.c-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.c-form form input,textarea{
+    margin-top: 25px;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid var(--main-bg);
+    padding:10px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font:small-caption
+}
+
+
+
+.c-form form button{
+    margin-top:50px;
+    width:auto;
+    height:auto;
+    padding:15px;
+    background-color: var(--main-bg);
+    color:var(--text-color-1);
+    font-size: large;
+    font-weight: bolder;
+}
+
+.c-info{
+    width:50%;
+    background: var(--main-bg);
+    height: inherit;
+    border-radius: 0;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-1);
+}
+.c-info h2{
+    align-self: center;
+    padding-top: 40px;
+}
+
+.c-info div{
+    padding: 0 10vw;
+    margin-top:10px;
+    font-weight: bold;
+}
+
+.c-info div h4{
+    font-size:smaller;
+    font-weight: lighter;
+}
+
+#img img{
+    height:25px;
+    width: 25px;
+    margin: 0px 2px;
+    margin-top: 15px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+
+
+

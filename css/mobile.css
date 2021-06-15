@@ -1,0 +1,26 @@
+@media screen and (max-width:721px){
+    .cont{
+        flex-direction: column;
+    }
+
+    .c-form{
+        margin: auto;
+        height: fit-content;
+        padding: auto;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .c-form h1{
+        font-size:x-large;
+    }
+
+    .c-info{
+        width: 100%;
+        padding-bottom: 50px;
+        border-radius: 0;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+}
