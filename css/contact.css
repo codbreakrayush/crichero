@@ -18,7 +18,7 @@
 }
 
 body{
-    background-color: var(--second-bg-color);
+    background: var(--second-bg-color);
     font-family: var(--font-m);
 }
 .cont{
@@ -55,7 +55,7 @@ body{
     padding:10px 0px;
     padding-left: 20px;
     padding-right: 20px;
-    font:small-caption
+    font:caption;
 }
 
 
