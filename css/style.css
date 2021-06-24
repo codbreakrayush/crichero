@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Change these root variables to change the color and fonts */
+:root{
+    --main-bg: brown;
+    --second-bg-color: rgb(209, 204, 204);
+    --text-color-1:white;
+    --font-m: 'Roboto', sans-serif;
+}
+
+/* CONTACT CSS */
+.mw-1{
+    max-width: 70vw;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+body{
+    background: var(--second-bg-color);
+    font-family: var(--font-m);
+}
+.cont{
+    /* background-color: red; */
+    width: inherit;
+    height:auto;
+    display: flex;
+    border:0px solid var(--text-color-1);
+    border-radius: 60px;
+    background-color: var(--text-color-1);
+    margin-top: 5vw;
+}
+
+.c-form{
+    padding-top: 2vw;
+    margin-top: 1vw;
+    width: 50%;
+    margin-left:8vw;
+    margin-right:6vw;
+    padding-bottom: 2vw;
+    margin-bottom: 40px;
+}
+
+.c-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.c-form form input,textarea{
+    margin-top: 25px;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid var(--main-bg);
+    padding:10px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font:caption;
+}
+
+
+
+.c-form form button{
+    margin-top:50px;
+    width:auto;
+    height:auto;
+    padding:15px;
+    background-color: var(--main-bg);
+    color:var(--text-color-1);
+    font-size: large;
+    font-weight: bolder;
+}
+
+.c-info{
+    width:50%;
+    background: var(--main-bg);
+    height: inherit;
+    border-radius: 0;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-1);
+}
+.c-info h2{
+    align-self: center;
+    padding-top: 40px;
+}
+
+.c-info div{
+    padding: 0 10vw;
+    margin-top:10px;
+    font-weight: bold;
+}
+
+.c-info div h4{
+    font-size:smaller;
+    font-weight: lighter;
+}
+
+#img img{
+    height:25px;
+    width: 25px;
+    margin: 0px 2px;
+    margin-top: 15px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+/* NAVBAR CSS */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top: auto;
+    cursor: pointer;
+    display: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: var(--main-bg);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding-left:40px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+  
+}
+
+a.active,a:hover{
+    background: var(--second-bg-color);
+    transition: .5s;
+}
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width:1076px) and (min-width:418px) {
+    body {
+        background: none;
+    }
+
+    /* TEAM MEDIA QUERY */
+    .team{
+        max-width: 100%;
+        border:none;
+        padding: 0;
+    }
+
+    /* CONTACT MEDIA QUERY */
+    .cont {
+        flex-direction: column;
+        margin-top: 0;
+        border: none;
+        border-radius: 0;
+    }
+    .mw-1 {
+        max-width: 100vw;
+    }
+    .m-auto {
+        margin: 0;
+    }
+    .c-form {
+        margin: auto;
+        height: fit-content;
+        padding: auto;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .c-form h1 {
+        font-size: x-large;
+    }
+    .c-form form input, textarea {
+        font: small-caption;
+    }
+    .c-info {
+        width: 100%;
+        padding-bottom: 50px;
+        border-radius: 60px;
+        /* border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px; */
+    }
+
+    /* NAVBAR MEDIA QUERY */
+    .checkbtn {
+        display: inline;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--main-bg);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: var(--second-bg-color);
+        color:var(--text-color-1);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:418px) {
+    body{
+        background: none;
+    }
+
+    /* TEAM MEDIA QUERY */
+    .team{
+        max-width: 100%;
+        border:none;
+        padding: 0;
+    }
+    .t-cont{
+        width: auto;
+        height: auto;
+    }
+    .t-cont a{
+        flex-direction: column;
+    }
+
+    .cat-1{
+        width: fit-content;
+        align-self: center;
+    }
+    .cat-2{
+        text-align: center;
+        margin:5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .players{
+        margin:10px;
+        flex-direction: column;
+    }
+    .btn{
+        margin:10px 0px;
+    }
+
+    /* CONTACT MEDIA QUERY */
+    .cont {
+        flex-direction: column;
+        margin-top: 0;
+        border: none;
+        border-radius: 0;
+    }
+    .mw-1 {
+        max-width: 100vw;
+    }
+    .m-auto {
+        margin: 0;
+    }
+    .c-form {
+        margin: auto;
+        height: fit-content;
+        padding: auto;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .c-form h1 {
+        font-size: x-large;
+    }
+    .c-form form input, textarea {
+        font: small-caption;
+    }
+    .c-info {
+        width: 100%;
+        padding-bottom: 50px;
+        border-radius: 60px;
+        /* border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px; */
+    }
+
+    /* NAVBAR MEDIA QUERY */
+
+    .checkbtn {
+        display: inline;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--main-bg);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: var(--second-bg-color);
+        color:var(--text-color-1);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
