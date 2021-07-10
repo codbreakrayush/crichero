@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Change these root variables to change the color and fonts */
+:root{
+    --main-bg: brown;
+    --second-bg-color: rgb(238, 232, 232);
+    --text-color-1:white;
+    --shadow-color: rgb(165, 128, 128);
+    --font-m: 'Roboto', sans-serif;
+}
+
+body{
+    /* background: var(--second-bg-color); */
+    font-family: var(--font-m);
+}
+.payment h2{
+    /* background:var(--main-bg); */
+    text-align: center;
+}
+
+.payment-methods{
+    max-width: 70vw;
+    margin: auto;
+    background: var(--text-color-1);
+    border:2px solid var(--second-bg-color);
+    border-radius: 30px;
+    padding:0px 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.payment-methods h3{
+    border-bottom: 1px solid var(--second-bg-color);
+    padding-bottom: 10px;
+}
+
+.cards{
+    margin-bottom: 30px;
+    font-size: small;
+}
+
+.savecards{
+    margin-bottom: 30px;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-name{
+    font-weight:900;
+    font-size: small;
+}
+
+#debit{
+    display: none;
+}
+
+#upi{
+    display: none;
+}
+
+form input{
+    width:auto;
+    height:20px;
+    border:1px solid var(--shadow-color);
+    border-radius: 10px;
+    padding: 5px;
+    margin:10px
+}
+.btn{
+    width:auto;
+    height:auto;
+    padding:8px;
+    background-color: var(--main-bg);
+    color:var(--text-color-1);
+    font-size: small;
+    font-weight: bolder;
+    border:1px solid var(--shadow-color);
+    border-radius: 20px;
+}
+
+.pay{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+}
+
+.Select{
+    border: none;
+    font-weight: bolder;
+    text-shadow: 5px;
+}
+
+@media screen and (max-width:418px){
+    .payment-methods{
+        max-width: fit-content;
+    }
+    .pay{
+        width:40px;
+        height:40px;
+    }
+}

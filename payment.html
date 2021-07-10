@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="js/payment.js"></script>
+    <title>Payment Page</title>
+</head>
+<body>
+    <div class="payment">
+        <h2>Select a Payment Method</h2>
+        <div class="payment-methods">
+            <h3>Your Saved debit and credit cards</h3>
+            <div class="savecards">
+            <div>
+                <span class="card-name">State bank of India debit Card</span> ending in ****<br>
+                <span class="card-name">Name on card - </span>Card Owner Name <br>
+                <span class="card-name">Expiry Date - </span>12/2021
+            </div>
+            <button class="btn pay">Pay</button>
+            </div>
+            <div class="savecards">
+            <div>
+                <span class="card-name">State bank of India debit Card</span> ending in ****<br>
+                <span class="card-name">Name on card - </span>Card Owner Name <br>
+                <span class="card-name">Expiry Date - </span>12/2021
+            </div>
+            <button class="btn pay">Pay</button>
+            </div>
+            <div class="savecards">
+            <div>
+                <span class="card-name">State bank of India debit Card</span> ending in ****<br>
+                <span class="card-name">Name on card - </span>Card Owner Name <br>
+                <span class="card-name">Expiry Date - </span>12/2021
+            </div>
+            <button class="btn pay">Pay</button>
+            </div>
+        </div>
+        <div class="payment-methods">
+            <h3>Another Payment Methods</h3>
+            <div class="cards">
+                <span class="card-name">Add Debit/Credit/ATM Card</span> <button onclick="viewdebit()" class="Select">+</button>
+                <div id="debit">
+                <p>We will save this card for your convenience.</p>
+                <form action="">
+                    <input type="text" placeholder="Card Number">
+                    <input type="text" placeholder="Name on Card">
+                    <input type="date" placeholder="Expiry Date">
+                    <button type="button" class="btn" >Add your Card</button>
+                </form>
+                </div> 
+            </div>
+            <div class="cards">
+                <span class="card-name">Using UPI</span> <button onclick="viewupi()" class="Select">+</button>
+                <div id="upi">
+                    <p>Please enter your UPI ID</p>
+                    <form action="">
+                        <input type="text" placeholder="Ex: MobileNumber@upi">
+                        <button type="button" class="btn" >Verify</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
